@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  LocalizableSwiftUI
+
+  Created by M Z on 04/10/2021.
+  
+*/
+
+"helloWorld %@" = "Salut %@";
+"helloWorldText" = "Bonjour le monde";

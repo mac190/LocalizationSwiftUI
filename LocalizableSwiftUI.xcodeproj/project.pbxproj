@@ -11,6 +11,8 @@
 		7DBA5363270B94E0003DF191 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBA5362270B94E0003DF191 /* ContentView.swift */; };
 		7DBA5365270B94E2003DF191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBA5364270B94E2003DF191 /* Assets.xcassets */; };
 		7DBA5368270B94E2003DF191 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBA5367270B94E2003DF191 /* Preview Assets.xcassets */; };
+		7DBA5371270B9527003DF191 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DBA5373270B9527003DF191 /* Localizable.strings */; };
+		7DBA5376270B95B1003DF191 /* LocalizationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBA5375270B95B0003DF191 /* LocalizationWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		7DBA5364270B94E2003DF191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DBA5367270B94E2003DF191 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7DBA5369270B94E2003DF191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DBA5372270B9527003DF191 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7DBA5374270B952C003DF191 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7DBA5375270B95B0003DF191 /* LocalizationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +59,11 @@
 			children = (
 				7DBA5360270B94E0003DF191 /* LocalizableSwiftUIApp.swift */,
 				7DBA5362270B94E0003DF191 /* ContentView.swift */,
+				7DBA5375270B95B0003DF191 /* LocalizationWrapper.swift */,
 				7DBA5364270B94E2003DF191 /* Assets.xcassets */,
 				7DBA5369270B94E2003DF191 /* Info.plist */,
 				7DBA5366270B94E2003DF191 /* Preview Content */,
+				7DBA5373270B9527003DF191 /* Localizable.strings */,
 			);
 			path = LocalizableSwiftUI;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 7DBA5354270B94E0003DF191;
 			productRefGroup = 7DBA535E270B94E0003DF191 /* Products */;
@@ -127,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DBA5368270B94E2003DF191 /* Preview Assets.xcassets in Resources */,
+				7DBA5371270B9527003DF191 /* Localizable.strings in Resources */,
 				7DBA5365270B94E2003DF191 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,11 +148,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DBA5363270B94E0003DF191 /* ContentView.swift in Sources */,
+				7DBA5376270B95B1003DF191 /* LocalizationWrapper.swift in Sources */,
 				7DBA5361270B94E0003DF191 /* LocalizableSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7DBA5373270B9527003DF191 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DBA5372270B9527003DF191 /* en */,
+				7DBA5374270B952C003DF191 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7DBA536A270B94E2003DF191 /* Debug */ = {
@@ -269,7 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalizableSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = BYZPJ8UL2L;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LocalizableSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -277,7 +299,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sixflags.ios.LocalizableSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qweasd.LocalizableSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,7 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalizableSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = BYZPJ8UL2L;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LocalizableSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -299,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sixflags.ios.LocalizableSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qweasd.LocalizableSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
